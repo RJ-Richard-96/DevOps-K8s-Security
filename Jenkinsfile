@@ -10,7 +10,7 @@ pipeline {
         }
         stage('build jar') {
             steps {
-                mvn clean install
+                sh 'mvn clean install'
             }
         }
     }
